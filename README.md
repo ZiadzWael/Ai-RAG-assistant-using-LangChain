@@ -30,7 +30,7 @@ User Query → Retrieval → Context Building → LLM Processing → Response
 - IBM Watsonx Project ID
 - pip or conda package manager
 
-## Quick Start
+## How To Run
 
 ### 1. Clone the Repository
 ```bash
@@ -157,19 +157,6 @@ Combines retrieved context with user queries using ChatPromptTemplate and create
 WATSONX_URL = "https://eu-de.ml.cloud.ibm.com"
 ```
 
-### US Region (South)
-```python
-WATSONX_URL = "https://us-south.ml.cloud.ibm.com"
-```
-
-## Troubleshooting
-
-### Module Not Found Errors
-```bash
-# Reinstall dependencies with latest versions
-pip install --upgrade langchain langchain-ibm langchain-text-splitters ibm-watsonx-ai
-```
-
 ### API Key Issues
 - Verify API key format starts with `cpd-apikey-`
 - Ensure Project ID matches your Watsonx workspace
@@ -213,35 +200,6 @@ IBM_API_KEY = os.getenv("IBM_API_KEY")
 PROJECT_ID = os.getenv("PROJECT_ID")
 ```
 
-### Additional Security Measures
-- Rotate API keys regularly
-- Use separate credentials for development and production
-- Enable API key expiration if available
-- Monitor API usage for suspicious activity
-
-## Requirements
-
-See `Backend/requirements.txt` for the complete dependency list:
-- langchain >= 0.1
-- langchain-ibm >= 0.1
-- langchain-text-splitters >= 0.0
-- ibm-watsonx-ai >= 0.1
-- chromadb >= 0.4
-- gradio >= 4.0
-- python-dotenv >= 1.0
-
-## Contributing
-
-Contributions are welcome! Please follow these steps:
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Acknowledgments
 
@@ -250,14 +208,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Mistral AI for developing the Mixtral model
 - Chroma for efficient vector storage capabilities
 - Gradio for the intuitive web interface framework
-
-## Support
-
-For issues, questions, or suggestions:
-- Check existing GitHub issues for solutions
-- Create a new issue with a detailed description
-- Include error messages, Python version, and system information
-- Provide steps to reproduce the issue
 
 ## Useful Resources
 
@@ -277,9 +227,3 @@ Future enhancements:
 - Fine-tuning capabilities for custom models
 - API endpoint for programmatic access
 - Multi-language support
-
----
-
-**Version**: 1.0.0  
-**Last Updated**: January 2026  
-**Maintained by**: Development Team
