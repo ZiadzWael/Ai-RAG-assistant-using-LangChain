@@ -34,7 +34,7 @@ User Query → Retrieval → Context Building → LLM Processing → Response
 
 ### 1. Clone the Repository
 ```bash
-git clone <your-repo-url>
+git clone <(https://github.com/ZiadzWael/Ai-RAG-assistant-using-LangChain/tree/main)>
 cd "Ai RAG assistant using LangChain"
 ```
 
