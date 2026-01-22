@@ -1,0 +1,26 @@
+# Gradio for the web-based interface
+gradio==4.44.0
+
+# IBM Watsonx AI SDK
+ibm-watsonx-ai==1.1.2
+
+# LangChain for retrieval-augmented generation pipeline
+langchain==0.2.11
+
+# IBM-specific LangChain integration
+langchain-ibm==0.1.11
+
+# LangChain document processing and text splitting
+langchain-community==0.2.10
+
+# Vector store for embeddings
+chromadb==0.4.24
+
+# PDF document loader (for loading documents)
+pypdf==4.3.1
+
+# For data validation and parsing
+pydantic==2.9.1
+
+# Hugging Face Hub for model integration
+huggingface_hub==0.23.0
