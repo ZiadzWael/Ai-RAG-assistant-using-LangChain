@@ -30,8 +30,8 @@ def get_llm():
         GenParams.REPETITION_PENALTY: 1.05,  # Repetition penalty
     }
     
-    project_id = "9824efd0-0c60-43e5-beae-aef520f88ad7"  # Set your Watsonx project ID
-    api_key = "Vbphrm0alv5xGKEAnjKyPN7CKzJaFvBMfYj0vXylaqWt"  # Replace with your new API key
+    project_id = "your project id"  # Set your Watsonx project ID
+    api_key = "api_key"  # Replace with your new API key
     
     watsonx_llm = WatsonxLLM(
         model_id=model_id,
@@ -66,7 +66,7 @@ def watsonx_embedding():
     watsonx_embedding = WatsonxEmbeddings(
         model_id="ibm/slate-30m-english-rtl",  # Your embedding model ID
         url="https://eu-de.ml.cloud.ibm.com",  # Watsonx URL
-        project_id="9824efd0-0c60-43e5-beae-aef520f88ad7",  # Your project ID
+        project_id="your project_id",  # Your project ID
         params=embed_params,
         apikey=api_key  # Pass the API key here as well
     )
@@ -113,3 +113,4 @@ rag_application = gr.Interface(
 
 # Launch the app
 rag_application.launch(server_name="127.0.0.1", server_port=7860)  # Launch the app locally
+
